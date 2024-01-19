@@ -1,5 +1,7 @@
 package com.example.layouts.screens
 
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -11,8 +13,11 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavHostController
+import com.example.layouts.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -34,10 +39,12 @@ fun RowLayout(navController: NavHostController) {
         }
     ) { it -> 
         Row(
-            modifier = Modifier.padding(it)
+            modifier = Modifier.padding(it),
+            horizontalArrangement = Arrangement.Center,
+            verticalAlignment = Alignment.CenterVertically
         ) {
-            Text(text = "Text One")
-            Text(text = "Text Two")
+            Image(painter = painterResource(id = R.drawable.albert), contentDescription = "Albert Picture")
+            Text(text = "Albert Einstein 🤣")
         }
     }
 }
