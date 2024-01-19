@@ -3,6 +3,7 @@ package com.example.layouts.screens
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
@@ -37,9 +38,9 @@ fun RowLayout(navController: NavHostController) {
                 }
             )
         }
-    ) { it -> 
+    ) {
         Row(
-            modifier = Modifier.padding(it),
+            modifier = Modifier.padding(it).fillMaxWidth(),
             horizontalArrangement = Arrangement.Center,
             verticalAlignment = Alignment.CenterVertically
         ) {

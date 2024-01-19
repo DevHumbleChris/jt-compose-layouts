@@ -20,7 +20,7 @@ fun JCNavigation() {
             RowLayout(navController)
         }
         composable("constraint") {
-            ConstraintLayout(navController)
+            ConstraintLT(navController)
         }
         composable("box") {
             BoxLayout(navController)

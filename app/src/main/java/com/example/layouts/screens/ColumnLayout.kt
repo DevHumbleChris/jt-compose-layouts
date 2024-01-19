@@ -3,6 +3,7 @@ package com.example.layouts.screens
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
@@ -37,9 +38,9 @@ fun ColumnLayout(navController: NavHostController) {
                 }
             )
         }
-    ) { it ->
+    ) {
         Column (
-            modifier = Modifier.padding(it),
+            modifier = Modifier.padding(it).fillMaxWidth(),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ){

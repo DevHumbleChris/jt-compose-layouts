@@ -35,7 +35,7 @@ fun BoxLayout(navController: NavHostController) {
                 }
             )
         }
-    ) { it ->
+    ) {
         Box (
             modifier = Modifier.padding(it)
         ) {
